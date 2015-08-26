@@ -1,0 +1,50 @@
+---
+layout: default
+---
+<div class="project">
+<article role="article">
+  {% if page.title %}
+  <header>
+    <h1 class="entry-title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
+    {% if page.date %}<p class="meta">{% include post/date.html %}{{ time }}</p>{% endif %}
+  </header>
+  {% endif %}
+</article>
+</div>
+{% if page.include_images.size > 0 %}
+<div class="slider-wrapper">
+  <div class="slider-hero">
+    {% for img_name in page.include_images %}
+        {% capture img_path %}
+            {% if img_name contains ":" %}
+            {{ img_name }}
+            {% else %}
+            {{ page.gallery_path }}{{ img_name }}
+            {% endif %}
+        {% endcapture %}
+    <div>
+      <img src="{{ img_path }}" alt="project demo image-slide" />
+    </div>
+    {% endfor %}
+    </div>
+  <div class="slider-nav">
+    {% for img_name in page.include_images %}
+        {% capture img_path %}
+            {% if img_name contains ":" %}
+            {{ img_name }}
+            {% else %}
+            {{ page.gallery_path }}{{ img_name }}
+            {% endif %}
+        {% endcapture %}
+    <div>
+      <img src="{{ img_path }}" alt="project demo image-slide" />
+    </div>
+    {% endfor %}
+    </div>
+</div>
+{% endif %}
+<div>
+<article role="article">
+    {{ content }}
+</article>
+</div>
