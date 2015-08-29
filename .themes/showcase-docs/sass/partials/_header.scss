@@ -1,0 +1,54 @@
+body > header {
+    @include background($header-bg);
+    text-align: center;
+    h1 {
+        font-size: 4em;
+        display: inline-block;
+        margin: 0;
+        a,
+        a:visited,
+        a:hover {
+            color: $title_color;
+            text-decoration: none;
+        }
+        &:after {
+            display: block;
+            background-image: url('../images/ShowcaseLogo.png');
+            background-image: url('../images/ShowcaseLogo.svg');
+            background-size: contain;
+            content: "";
+            height: 2em;
+            width: 40%;
+            position: relative;
+            top: -17px;
+            background-repeat: no-repeat;
+            margin: 0 auto;
+        }
+    }
+    h2 {
+        margin: .2em 0 0;
+        @extend .sans;
+        font-size: 1.5em;
+        color: $subtitle-color;
+        font-weight: normal;
+        position: relative;
+        top: -1em;
+    }
+    
+    @media only screen and (min-width: 550px) {
+        text-align: left;
+        h1 {
+            position: relative;
+            left: .5em;
+            &:after {
+                display: inline;
+                position: absolute;
+                left: -1.125em;
+            }
+        }
+        h2 {
+            top: 0;
+            left: 1.5em;
+        }
+    }
+}
