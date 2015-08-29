@@ -8,7 +8,7 @@ $slide-previewer-width-wide: 768px !default;
 // - standard aspect ratios (landscape): 4/3, 16/9
 // - standard aspect ratios (portrait): 3/4, 9/16
 // - adaptive height: 1
-$slide-previewer-aspect-ratio: 16/9 !default; 
+$slide-previewer-aspect-ratio: 1 !default; 
 
 .slider-wrapper, .slider-nav { background: $slider-nav-bg; }
 

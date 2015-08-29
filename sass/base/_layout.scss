@@ -12,7 +12,7 @@ $sidebar-pad-medium: 15px !default;
 $sidebar-pad-wide: 20px !default;
 $sidebar-width-wide: 300px !default;
 
-$indented-lists: false !default;
+$indented-lists: true !default;
 
 $header-font-size: 1em !default;
 $header-padding-top: 1.5em !default;
@@ -104,6 +104,7 @@ body {
   > article {
     width: 100%;
     .meta { position: relative; }
+    ol, ul { margin-left: 1.25em; }
   }
 }
 

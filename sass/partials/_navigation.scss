@@ -2,7 +2,7 @@ body > nav {
     line-height: 1em;
     width: 100%;
     position: relative;
-    @include background($nav-bg-gradient);
+    @include background($nav-bg-gradient, $nav-bg);
     border: {
         top: 1px solid $nav-border-top;
         bottom: 1px solid $nav-border-bottom;
@@ -77,8 +77,8 @@ body > nav {
         }
     }
     form {
+        display: block;
         font-family: $sans;
-        padding: .25em 0 .25em 0;
         @include background-clip(padding-box);
         fieldset[role="search"] {
             width: 99%;
@@ -91,6 +91,7 @@ body > nav {
             font-family: $fa, $sans;
             font-size: .85em;
             line-height: 1.5em;
+            text-indent: .5em;
             width: 85%;
             @include border-radius(.3em);
             @include background-clip(padding-box);
@@ -105,7 +106,7 @@ body > nav {
             vertical-align: middle;
         }
         form {
-            display: inline-block;
+            display: block;
             fieldset[role="search"] {
                 width: $sidebar-width-medium - $sidebar-pad-medium*2 + 20px;
                 position: absolute;
@@ -120,7 +121,6 @@ body > nav {
             }
             .search {
                 width: 95%;
-                text-indent: .5em;
             }
         }
         ul {

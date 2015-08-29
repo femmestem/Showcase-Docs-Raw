@@ -1,6 +1,6 @@
 /* Main Background Images */
-$noise-bg: image-url('noise.png') top left !default;
 $geometric-bg: image-url('footer_lodyas.png') top left !default;
+$noise-bg: image-url('noise.png') top left !default;
 $img-border: inline-image('dotted-border.png') !default;
 
 
@@ -17,19 +17,19 @@ $main-bg: #f8f8f8 !default;
 $page-bg: #222 !default;
 $article-border: #eeeeee !default;
 $type-border: #ddd !default;
-$header-bg: $geometric-bg;
+$header-bg: tint-color(#0A0564, 0.20, $geometric-bg);
 $header-border: lighten(#333, 15) !default;
 
 // Font
 $title-color: #f2f2f2 !default;
-$subtitle-color: #aaa !default;
+$subtitle-color: lighten(#FFCC60, 20);
+$link-color-hover: #E76737;
 $text-color: #222 !default;
 $text-color-light: #aaa !default;
 
 /* Navigation Colors */
 // Background
-$nav-bg: #aaa !default;
-$nav-color: #f3f2f1 !default;
+$nav-bg: desaturate(lighten(#B27E2E, 18), 5);
 $nav-bg-gradient: linear-gradient(lighten($nav-bg, 8), $nav-bg, darken($nav-bg, 11)) !default;
 $nav-placeholder: desaturate(darken($nav-bg, 10), 15) !default;
 $nav-border: darken($nav-bg, 10) !default;
@@ -41,7 +41,7 @@ $search-bg: #f8f8f8 !default;
 
 // Font
 $nav-color: darken($nav-bg, 30);
-$nav-color-hover: lighten($nav-color, 15) !default;
+$nav-color-hover: darken($nav-color, 10) !default;
 
 /* Sidebar Colors */
 // Background

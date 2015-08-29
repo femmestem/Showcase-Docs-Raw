@@ -45,6 +45,6 @@
 }
 
 @function slide-height-no-sidebar($aspect-ratio, $device-width){
-        $height: if($aspect-ratio == 1, 100%, $device-width/$aspect-ratio);
+        $height: if($aspect-ratio == 1, 100%, ($device-width * 1.25)/$aspect-ratio);
     @return $height;
 }
