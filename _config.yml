@@ -43,9 +43,9 @@ kramdown:
 # source/_portfolio-name Liquid-accessible through {% site.portfolio-name %}
 
 collections:
-  portfolio:
+  example-portfolio:
     output: true
-    permalink: /portfolio/:title/
+    permalink: /docs/portfolios-and-pages/example-portfolio/:title/
 
 # Example
 # ------------
