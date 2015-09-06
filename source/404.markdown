@@ -6,4 +6,4 @@ sharing: false
 footer: false
 ---
 <p>Sorry, the page you're looking for has been moved or deleted.</p>
-<a href="{{root_url}}/blog/archives">View Archives</a> or <a href="{{root_url}}">Return Home</a>
+<a href="{{root_url}}/blog/archives">View Archives</a> or <a href="/">Return Home</a>
